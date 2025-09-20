@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" href="assets/icons/favicon.png">
+    <title>Contato | Imperium Barber</title>
+</head>
+
+<body>
+    <header>
+        <section class="header__section">
+            <h1 class="header__section-h1">Imperium Barber</h1>
+            <nav class="header__section-nav">
+                <ul class="header__section-nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="specialities.html">Tipos de Cortes</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a class="header__section-login" href="index.html">Login</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="contact__section">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo para agendar seu horário ou tirar suas dúvidas. Nossa equipe responderá o
+                mais breve possível.</p>
+
+            <form id="contactForm" class="contact__form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome aqui" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Número de Celular</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(21) 99999-9999" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Tipo de Serviço Desejado</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Selecione um serviço</option>
+                        <option value="corte">Corte de Cabelo (Clássico ou Moderno)</option>
+                        <option value="barba">Barba (Clássica ou Modelagem)</option>
+                        <option value="combo">Combo (Corte + Barba)</option>
+                        <option value="tratamento">Tratamentos (Hidratação, Limpeza de Pele)</option>
+                        <option value="spa">Day Spa Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <select id="subject" name="subject" required>
+                        <option value="agendamento" selected>Agendamento de Horário</option>
+                        <option value="duvida">Dúvidas sobre Serviços</option>
+                        <option value="orcamento">Orçamentos para Pacotes</option>
+                        <option value="feedback">Feedback ou Sugestão</option>
+                        <option value="outro">Outro Assunto</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Sua Mensagem</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Deixe aqui sua mensagem detalhada..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="contact__form-button">Enviar Mensagem</button>
+            </form>
+
+            <div class="contact__info">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Imperium Barber. Todos os direitos reservados.</p>
+        <p>Endereço: Rua Abacaxi, 123 - Abacaxilandia, Rio de Abacaxi</p>
+        <p>Telefone: (21) 99999-9999 | Email: imperiumbarber@teste.com</p>
+        <p>Redes Sociais:
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="js/form-validation.js"></script>
+
+</body>
+
+</html>

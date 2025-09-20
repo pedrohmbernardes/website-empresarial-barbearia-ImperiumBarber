@@ -1,0 +1,15 @@
+/* Variaveis de estilo globais */
+:root {
+    --background-color: #f4ede3;
+    --text-color: #1c1c1c;
+    --primary-color: #3c4a3e;
+    --secondary-color: #5a3e2b;
+    --tertiary-color: #c9a646;
+
+    --font-primary: "Roboto", sans-serif;
+    --font-secondary: "Cinzel", serif;
+    --font-tertiary: "Lato", sans-serif;
+    --font-quaternary: "Merriweather", serif;
+    --font-quinary: "Playfair", serif;
+    --alternative-font: "Poppins", sans-serif;
+}

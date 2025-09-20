@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/pages/_about.css">
+    <link rel="icon" href="assets/icons/favicon.png">
+    <title>Sobre Nós | Imperium Barber</title>
+</head>
+
+<body>
+    <header>
+        <section class="header__section">
+            <h1 class="header__section-h1">Imperium Barber</h1>
+            <nav class="header__section-nav">
+                <ul class="header__section-nav-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="about.html">Sobre Nós</a></li>
+                    <li><a href="specialities.html">Tipos de Cortes</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <a class="header__section-login" href="index.html">Login</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="about__section">
+            <div class="about__section-container">
+                <div class="about__text-content">
+                    <h2>Nossa História</h2>
+                    <p>Fundada em 2025, a Imperium Barber nasceu de um sonho: criar mais do que uma simples barbearia,
+                        mas um verdadeiro refúgio para o homem moderno. Um lugar onde a tradição da barbearia clássica
+                        se encontra com as técnicas mais inovadoras, proporcionando uma experiência única de cuidado e
+                        bem-estar.</p>
+                    <p>Nossos fundadores, apaixonados pela arte da barbearia, viajaram para aprender com os melhores,
+                        trazendo para o coração da cidade um serviço de excelência, com atendimento personalizado e um
+                        ambiente acolhedor e sofisticado.</p>
+                </div>
+                <div class="about__image-content">
+                    <img src="assets/imgs-base/barber-about.jpg" alt="Foto do interior da barbearia Imperium Barber">
+                </div>
+            </div>
+        </section>
+
+        <section class="about__section">
+            <div class="about__mission-vision">
+                <div class="about__mission-card">
+                    <h3>Nossa Missão</h3>
+                    <p>Oferecer um serviço impecável, combinando técnica, arte e produtos de alta qualidade para realçar
+                        o estilo de cada cliente, garantindo sua total satisfação e confiança.</p>
+                </div>
+                <div class="about__mission-card">
+                    <h3>Nossos Valores</h3>
+                    <ul>
+                        <li><strong>Excelência:</strong> Busca contínua pela perfeição em cada corte e barba.</li>
+                        <li><strong>Tradição:</strong> Respeito pelas técnicas clássicas que definem nossa arte.</li>
+                        <li><strong>Inovação:</strong> Abertura para novas tendências e tecnologias do setor.</li>
+                        <li><strong>Respeito:</strong> Atendimento cordial e personalizado a todos os clientes.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="about__gallery">
+            <h2>Conheça Nosso Espaço</h2>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="assets/imgs-carroussel/gallery-about-1.jpg" style="width:100%"
+                        alt="Imagem 1 do espaço da barbearia">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/imgs-carroussel/gallery-about-2.jpg" style="width:100%"
+                        alt="Imagem 2 do espaço da barbearia">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/imgs-carroussel/gallery-about-3.jpg" style="width:100%"
+                        alt="Imagem 3 do espaço da barbearia">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Imperium Barber. Todos os direitos reservados.</p>
+        <p>Endereço: Rua Abacaxi, 123 - Abacaxilandia, Rio de Abacaxi</p>
+        <p>Telefone: (21) 99999-9999 | Email: imperiumbarber@teste.com</p>
+        <p>Redes Sociais:
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Controles de próximo/anterior
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        // Troca automática de slides a cada 5 segundos
+        setInterval(() => {
+            plusSlides(1);
+        }, 5000); 
+    </script>
+
+</body>
+
+</html>

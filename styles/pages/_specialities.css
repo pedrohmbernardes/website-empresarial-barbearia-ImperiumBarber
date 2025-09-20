@@ -1,0 +1,76 @@
+/* styles/pages/specialities.css - OPÇÃO 2 */
+
+.specialities__intro {
+    text-align: center;
+    padding: 32px 0 64px 0;
+}
+.specialities__intro h2 {
+    font-family: var(--font-secondary);
+    font-size: 2.8rem;
+    color: var(--background-color);
+    margin-bottom: 1rem;
+}
+.specialities__intro p {
+    font-family: var(--font-tertiary);
+    font-size: 1.2rem;
+    color: var(--background-color);
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.specialities__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    padding: 0 1rem;
+}
+.speciality__card {
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 5px solid var(--tertiary-color);
+}
+.speciality__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.speciality__card .image-placeholder {
+    width: 100%;
+    height: 220px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speciality__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.speciality__card-content {
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.speciality__card-content h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin: 0 0 1rem 0;
+}
+.speciality__card-content p {
+    font-family: var(--font-tertiary);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin: 0;
+    flex-grow: 1;
+}

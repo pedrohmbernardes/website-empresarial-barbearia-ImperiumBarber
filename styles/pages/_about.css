@@ -1,0 +1,157 @@
+/* styles/pages/about.css */
+
+.about__section {
+    background-color: var(--background-color);
+    padding: 64px 48px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 64px;
+}
+
+.about__section h2,
+.about__gallery h2 {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.about__section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about__text-content {
+    flex-basis: 55%;
+}
+
+.about__text-content h2 {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.about__text-content p {
+    font-family: var(--font-tertiary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.about__image-content {
+    flex-basis: 40%;
+}
+
+.about__image-content img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about__mission-vision {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about__mission-card {
+    flex-basis: 45%;
+    padding: 2rem;
+    background-color: #fff;
+    border-left: 5px solid var(--tertiary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.about__mission-card h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.about__mission-card p,
+.about__mission-card li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+.about__mission-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about__mission-card li {
+    margin-bottom: 0.5rem;
+}
+
+.about__gallery {
+    background-color: var(--background-color);
+    padding: 64px 32px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

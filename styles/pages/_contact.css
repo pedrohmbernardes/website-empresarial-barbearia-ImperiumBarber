@@ -1,0 +1,131 @@
+/* styles/pages/contact.css */
+
+.contact__section {
+    background-color: var(--background-color);
+    padding: 4rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact__section h2 {
+    font-family: var(--font-secondary);
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact__section p {
+    font-family: var(--font-tertiary);
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(60, 74, 62, 0.2);
+}
+
+.contact__form-button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: var(--font-primary);
+    font-weight: 700;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1rem;
+}
+
+.contact__form-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.contact__info {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #dcdcdc;
+}
+
+.contact__info h3 {
+    font-family: var(--font-secondary);
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.contact__info-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.contact__info-item:hover {
+    color: var(--primary-color);
+}
+
+.contact__info-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
