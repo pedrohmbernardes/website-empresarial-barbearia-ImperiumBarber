@@ -1,8 +1,8 @@
-# Imperium Barber - Website Institucional
+# BarberCria - Website Institucional
 
 ## 📖 Sobre o Projeto
 
-Este repositório contém o código-fonte do website institucional da **Imperium Barber**, uma barbearia fictícia que combina tradição e modernidade para oferecer uma experiência única de cuidado masculino. O projeto foi desenvolvido como parte de uma avaliação acadêmica, com o objetivo de aplicar conceitos de desenvolvimento web front-end, incluindo HTML5, CSS3 e JavaScript.
+Este repositório contém o código-fonte do website institucional da **BarberCria**, uma barbearia fictícia que combina tradição e modernidade para oferecer uma experiência única de cuidado masculino. O projeto foi desenvolvido como parte de uma avaliação acadêmica, com o objetivo de aplicar conceitos de desenvolvimento web front-end, incluindo HTML5, CSS3 e JavaScript.
 
 O site foi construído para ser visualmente atraente, neste primeiro momento sem responsividade para mobile, focando apenas em Desktop. Em breve estaremos atualizando o projeto para responsividade mobile, e informarei aqui no Readme.
 
@@ -15,7 +15,7 @@ O projeto cumpre integralmente as "Regras do Trabalho", conforme detalhado abaix
 1.  **Mínimo de 5 Páginas:** O site é composto por 6 páginas principais, todas com conteúdo textual e visual:
 
     - **Página Principal (`index.html`):** Apresentação geral da barbearia, com links para as principais seções.
-    - **Página Sobre (`about.html`):** Detalhes sobre a história, missão e valores da Imperium Barber.
+    - **Página Sobre (`about.html`):** Detalhes sobre a história, missão e valores da BarberCria.
     - **Página de Serviços (`services.html`):** Catálogo completo com todos os rituais de cuidado oferecidos.
     - **Página de Especialidades (`specialities.html`):** Funciona como uma página de "novidades" ou destaques, apresentando os cortes de cabelo que são tendência e especialidade da casa.
     - **Página de Contato (`contact.html`):** Inclui informações de endereço, telefone, e-mail e links para redes sociais (placeholders). Um formulário de contato funcional com validação via JavaScript está implementado.
@@ -31,7 +31,7 @@ O projeto cumpre integralmente as "Regras do Trabalho", conforme detalhado abaix
 
 ### Quem Somos
 
-- **Nossa História:** Fundada em 2025, a Imperium Barber nasceu do sonho de ser um refúgio para o homem moderno, unindo a tradição da barbearia clássica com técnicas inovadoras para uma experiência única de cuidado e bem-estar.
+- **Nossa História:** Fundada em 2025, a BarberCria nasceu do sonho de ser um refúgio para o homem moderno, unindo a tradição da barbearia clássica com técnicas inovadoras para uma experiência única de cuidado e bem-estar.
 - **Nossa Missão:** Oferecer um serviço impecável, combinando técnica, arte e produtos de alta qualidade para realizar o estilo de cada cliente, garantindo sua total satisfação e confiança.
 - **Nossos Valores:**
   - **Excelência:** Busca contínua pela perfeição.
